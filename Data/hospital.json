@@ -1,11 +1,11 @@
 [
   {
-    "Name Of Hospital": "Alshifa",
-    "Patient Count": 300,
+    "Name Of Hospital": "Moulana",
+    "Patient Count": 350,
     "Location": "PMNA"
   },
   {
-    "Name Of Hospital": "MES",
+    "Name Of Hospital": "Alshifa",
     "Patient Count": 300,
     "Location": "PMNA"
   }

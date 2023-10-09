@@ -1,4 +1,3 @@
-
 const express = require('express');
 const app = new express();
 
@@ -9,11 +8,7 @@ app.use(express.json())
 
 require('dotenv').config();
 
-
-
 const fs = require('fs');
-
-
 
 const routerFile = require('./route/Routes');
 app.use('/api', routerFile);

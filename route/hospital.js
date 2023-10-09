@@ -39,7 +39,7 @@ hospitalRoutes.put('/update', (req, res) => {
         
         fs.readFile(dataPath, 'utf-8', (err, data) => {
             if (err) {
-                console.error('Error reading data from the file:', err);
+                console.log('Error reading data from the file:', err);
                 return res.status(500).send('Error reading data from the file');
             }
 
@@ -50,7 +50,7 @@ hospitalRoutes.put('/update', (req, res) => {
                 saveHospitalData(existHospital);
                 res.send(existHospital);
             } catch (error) {
-                console.error('Error updating hospital data:', error);
+                console.log('Error updating hospital data:', error);
                 res.status(500).send('Error updating hospital data');
             }
         });
@@ -65,7 +65,7 @@ hospitalRoutes.put('/update', (req, res) => {
         
         fs.readFile(dataPath,'utf-8',(err,data)=>{
             if (err) {
-                console.error('Error reading data from the file:', err);
+                console.log('Error reading data from the file:', err);
                 return res.status(500).send('Error reading data from the file');
             }
             try {
@@ -74,7 +74,7 @@ hospitalRoutes.put('/update', (req, res) => {
                 saveHospitalData(existHospital)
                 res.send(existHospital);
             } catch (error) {
-                console.error('Error deleting hospital data:', error);
+                console.log('Error deleting hospital data:', error);
                 res.status(500).send('Error deleting hospital data');
             }
         })
